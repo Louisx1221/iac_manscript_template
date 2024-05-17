@@ -1,0 +1,234 @@
+% !Mode:: "TeX:UTF-8"
+% IAC LaTeX manscript template
+% Author: Louisx1221
+% Email:  louisx1221@gmail.com
+% Date:   2024/05/17
+
+\documentclass[twocolumn, 10pt]{article}
+
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{
+	\footnotesize 75\textsuperscript{th} International Astronautical Congress (IAC), Milan, Italy, 14-18 October 2024. \\
+	Copyright ©2024 by the International Astronautical Federation (IAF). All rights reserved.
+}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\quad\,\,\, IAC-24-A1.2.3}
+\fancyfoot[R]{Page \thepage\,of \pageref{LastPage} \quad\,\,\,}
+
+\usepackage{authblk}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{.5em}{}
+\titleformat{\subsection}{\normalsize\it}{\thesubsection}{.5em}{}
+\titleformat{\subsubsection}{\normalsize\it}{\thesubsubsection}{.5em}{}
+\titlespacing*{\section}{0pt}{1em plus .0ex minus .0ex}{.3ex plus .0ex}
+\titlespacing*{\subsection}{0pt}{1em plus .0ex minus .0ex}{.3ex plus .0ex}
+\titlespacing*{\subsubsection}{0pt}{1em plus .0ex minus .0ex}{.3ex plus .0ex}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{caption}
+\renewcommand{\figurename}{Fig.}
+\DeclareCaptionLabelSeparator{period}{. }
+\captionsetup{labelsep=period}
+
+\usepackage{booktabs}
+\usepackage{threeparttable}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{hyperref}
+\makeatletter
+\def\UrlAlphabet{
+	\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+	\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+	\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D
+	\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N
+	\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X
+	\do\Y\do\Z}
+\def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\g@addto@macro{\UrlBreaks}{\UrlAlphabet}
+\g@addto@macro{\UrlBreaks}{\UrlDigits}
+\makeatother
+
+\usepackage{natbib}
+\setlength{\bibsep}{0pt}
+
+\title{
+	\vspace{-1.3em}
+	\normalsize \quad\, IAC-24-A1.2.3 \\ \vspace{1.1em}
+	\bfseries \quad\, Manuscript Template and Style Guide (Title of Your Paper)
+	\vspace{-0.4em}
+}
+\date{}
+
+\author[a$\ast$]{\normalsize \bfseries \quad\, Eva Y.-W. Chang}
+\author[b]{\normalsize \bfseries Rock J.-S. Chern}
+\affil[a]{
+	Department of Tourism and Hospitality, China University of Science and Technology, 200 Chunghwa Street, Henshan Village, Hsinchu County, Taiwan 31241,
+	\href{mailto:eva77tw@cc.hc.cust.edu.tw}{\rm eva77tw@cc.hc.cust.edu.tw}
+}
+\affil[b]{
+	Department of Aerospace Engineering, Ryerson University, 350 Victoria Street, Toronto, Ontario, Canada M5B 2K3,
+	\href{mailto:editor-in-chief@iaamail.org}{\rm editor-in-chief@iaamail.orz}
+}
+\affil[$\ast$]{\rm Corresponding Author}
+\renewcommand*{\Affilfont}{\it\raggedright}
+\renewcommand\Authand{, }
+
+\renewenvironment{abstract}
+{
+	\begin{center}
+		\bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+	\end{center}
+	\list{}{
+		\setlength{\leftmargin}{0pt}
+		\setlength{\rightmargin}{\leftmargin}%
+	}
+	\item\relax
+}
+{\endlist}
+
+\begin{document}
+\twocolumn[\begin{@twocolumnfalse}
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{-3.4em}
+\begin{abstract}
+	\vspace{-0.5em} \quad\,\,
+	A concise and factual abstract (written in third person and in one paragraph) of no more than 400 words is required. The abstract should state briefly the purpose of the research, the principal results and major conclusions. An abstract must be stand alone and complete in itself with no references to the main body of the manuscript. References should be avoided, but if essential, then cite the author(s) and year(s). Also, non-standard or uncommon abbreviations should be avoided, but if essential they must be defined at their first mention in the abstract itself. Readers should not have to read the full text to understand the abstract. The abstract can be an updated version of the one submitted at the call-for-abstracts, but its contents must not differ substantially. \\
+	\textbf{Keywords:} (maximum 6 keywords)
+\end{abstract}
+\end{@twocolumnfalse}]
+
+\section*{Nomenclature}
+This section is not numbered. A nomenclature section could be provided when there are mathematical symbols in your paper. Superscripts and subscripts must be listed separately. Nomenclature definitions should not appear again in the text.
+
+\section*{Acronyms/Abbreviations}
+This section is not numbered. Define acronyms and abbreviations that are not standard in this section. Such acronyms and abbreviations that are unavoidable in the abstract must be defined at their first mention there. Ensure consistency of abbreviations throughout the article. Always use the full title followed by the acronym (abbreviation) to be used, e.g., reusable suborbital launch vehicle (RSLV), International Space Station (ISS).
+
+\section{Introduction}
+Section headings are in bold and placed flush on the left hand margin of the column.
+The Introduction Section is to state the objectives of the work, provide an adequate background including a brief literature survey, major differences from the others, and sectional organization of this paper. Avoid a too detailed and lengthy literature survey and a summary of the results.
+Divide your paper into clearly defined and numbered sections numbered 1., 2., …. Subsections should be numbered 1.1 (then 1.1.1, 1.1.2, ...), 1.2, etc. Use this numbering also for internal cross-referencing: do not just refer to “the text”. Any subsection may be given a brief heading. Each heading should appear on its own separate line.
+
+\subsection{Subsection headings}
+Subsection headings are in italics and placed flush on the left hand margin of the column.
+
+\subsubsection{Sub-subsection headings}
+Sub-subsection headings are in italics and placed flush on the left hand margin of the column.
+
+\section{Material and methods}
+Provide sufficient detail to allow the work to be reproduced. Methods already published should be indicated by a reference: only relevant modifications should be described.
+
+\section{Theory and calculation}
+A Theory section should extend, not repeat, the background to the article already dealt with in the Introduction and lay the foundation for further work. In contrast, a Calculation section represents a practical development from a theoretical basis.
+
+\subsection{Equation numbers}
+Number consecutively any equations that have to be displayed separately from the text (if referred to explicitly in the text). The numbers identifying the equations should be placed in parentheses to the right of the equation. For example:
+\begin{equation}
+	{\vec F_g} = - G\frac{{m \times {m_E}}}{{R_E^2}}{\vec i_r} = m{\vec g_{ta}}
+\end{equation}
+
+\subsection{Figure numbers}
+Ensure that each figure/illustration has a title. All figures/illustrations must be numbered and cited (see Fig. \ref{fig:ss2}) in the text consecutively. Place figures/ illustrations as close as possible to the first references to them in the manuscript. Restrict them to single-column width unless this would make them illegible (then extend these figures/illustrations across two columns or place them to the end of your paper).
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{SS2_and_VMS_Eve.jpg}
+	\caption{SpaceShipTwo carried under White Knight Two}
+	\label{fig:ss2}
+\end{figure}
+
+\subsection{Tables}
+Tables can be placed either next to the relevant text in the article, or on separate page(s) at the end. Number and cite (as shown in Table \ref{tab:orbits}) tables consecutively in accordance with their appearance in the text. Place table title above and any remarks below the table body.
+\begin{table}[htpb]
+	\caption{Major data of the orbits of Venus, Earth, Mars and Jupiter}
+	\centering
+	\resizebox{1.0\linewidth}{!}{
+	\begin{threeparttable}
+	\footnotesize
+	\begin{tabular}{l *{4}c}
+		\toprule
+					& Venus	& Earth	& Mars	& Jupiter	\\
+		\midrule
+		M/$\rm M_E$	& 0.82	& 1		& 0.11	& 317.89	\\
+		e			& 0.007	& 0.017	& 0.093	& 0.048		\\
+		R (AU*)		& 0.7233& 1		& 1.524	& 5.203		\\
+		i (deg)		& 3.40	& 0		& 1.85	& 1.30		\\
+		T (years)	& 0.62	& 1		& 1.88	& 11.86		\\
+		\bottomrule
+	\end{tabular}
+	\begin{tablenotes}
+		\footnotesize
+		\item[*] AU = Astronomical Unit.
+	\end{tablenotes}
+	\end{threeparttable}
+	}
+	\label{tab:orbits}
+\end{table}
+
+Tables with a moderate amount of information should be positioned within one column. Tables, figures or pictures with large amounts of information or size may extend across two columns.
+
+\subsection{Page Numbers}
+Indicate page number at the bottom of each page.
+
+\section{Results}
+Results should be clear and concise.
+
+\section{Discussion}
+This should explore the significance of the results of the work, not repeat them. A combined Results and Discussion section is often appropriate. Avoid extensive citations and discussion of published literature.
+
+\section{Conclusions}
+The main conclusions of the study may be presented in a short Conclusions section, which may stand alone or form a subsection of a Discussion or Results and Discussion section.
+
+\section*{Acknowledgements}
+This section is not numbered.
+
+\section*{Appendix A (Title)}
+This section is not numbered.
+
+\section*{Appendix B (Title)}
+This section is not numbered.
+
+\section*{Etc.}
+
+\noindent\textit{In the text}
+
+Indicate references by number(s) in square brackets in line with the text. The actual authors can be referred to, but the reference number(s) must always be given.
+
+Example: “..... as demonstrated [3,6]. Barnaby and Jones [8] obtained a different result ....”
+
+\noindent\textit{List of references}
+Number the references (numbers in square brackets) in the list in the order in which they appear in the text.
+
+Examples:\\
+Reference to a journal publication\cite{art}.\\
+Reference to a conference/congress paper\cite{conf}.\\
+Reference to a book\cite{book}.\\
+Reference to a chapter in an edited book\cite{chap}.\\
+Reference to a website\cite{web}.
+
+\bibliographystyle{unsrt}
+\bibliography{reference}
+
+% \begin{thebibliography}{9}
+% 	\bibitem{art} J. van der Geer, J.A.J. Hanraads, R.A. Lupton, The art of writing a scientific article, J. Sci. Commun. 163 (2010) 51–59.
+% 	\bibitem{conf} Y.-W. Chang, J.-S. Chern, Ups and Downs of Space Tourism Development in 60 Years from Moon Register to SpaceShipTwo Crash, IAC-15-E4.2.8, 66th International Astronautical Congress, Jerusalem, Israel, 2015, 12 – 16 October.
+% 	\bibitem{book} W. Strunk Jr., E.B. White, The Elements of Style, fourth ed., Longman, New York, 2000.
+% 	\bibitem{chap} G.R. Mettam, L.B. Adams, How to prepare an electronic version of your article, in: B.S. Jones, R.Z. Smith (Eds.), Introduction to the Electronic Age, E-Publishing Inc., New York, 2009, pp. 281–304.
+% 	\bibitem{web} E. Mack, Could Virgin Galactic's Spaceport America be put up for sale? 23 February 2015,\\
+% 	http://www.gizmag.com/spaceport-america-hits-nags/36200/, (accessed 30.04.16).
+% \end{thebibliography}
+
+\end{document}
