@@ -2,7 +2,7 @@
 % IAC LaTeX manscript template
 % Author: Louisx1221
 % Email:  louisx1221@gmail.com
-% Date:   2024/05/17
+% Date:   2024/05/18
 
 \documentclass[twocolumn, 10pt]{article}
 
@@ -32,6 +32,11 @@
 
 \usepackage{indentfirst}
 \setlength{\parindent}{0.5cm}
+
+\setlength\columnsep{0.6cm}
+
+\usepackage{amssymb, amsthm, amsmath}
+\usepackage{cuted}
 
 \usepackage{graphicx}
 \graphicspath{ {./figures/} }
@@ -100,6 +105,7 @@
 {\endlist}
 
 \begin{document}
+
 \twocolumn[\begin{@twocolumnfalse}
 \maketitle
 \thispagestyle{fancy}
@@ -195,6 +201,9 @@ The main conclusions of the study may be presented in a short Conclusions sectio
 \section*{Acknowledgements}
 This section is not numbered.
 
+\setcounter{equation}{0}
+\renewcommand\theequation{A.\arabic{equation}}
+
 \section*{Appendix A (Title)}
 This section is not numbered.
 
@@ -210,6 +219,7 @@ Indicate references by number(s) in square brackets in line with the text. The a
 Example: “..... as demonstrated [3,6]. Barnaby and Jones [8] obtained a different result ....”
 
 \noindent\textit{List of references}
+
 Number the references (numbers in square brackets) in the list in the order in which they appear in the text.
 
 Examples:\\
