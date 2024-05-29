@@ -204,10 +204,13 @@ This section is not numbered.
 \setcounter{equation}{0}
 \renewcommand\theequation{A.\arabic{equation}}
 
-\section*{Appendix A (Title)}
+\appendix
+\titleformat{\section}{\normalsize\bfseries}{Appendix \thesection}{.5em}{}
+
+\section{(Title)}
 This section is not numbered.
 
-\section*{Appendix B (Title)}
+\section{(Title)}
 This section is not numbered.
 
 \section*{Etc.}
