@@ -69,6 +69,8 @@
 \usepackage{natbib}
 \setlength{\bibsep}{0pt}
 
+\usepackage{balance}
+
 \title{
 	\vspace{-1.3em}
 	\normalsize \quad\, IAC-24-A1.2.3 \\ \vspace{1.1em}
@@ -201,11 +203,10 @@ The main conclusions of the study may be presented in a short Conclusions sectio
 \section*{Acknowledgements}
 This section is not numbered.
 
-\setcounter{equation}{0}
-\renewcommand\theequation{A.\arabic{equation}}
-
 \appendix
 \titleformat{\section}{\normalsize\bfseries}{Appendix \thesection}{.5em}{}
+\setcounter{equation}{0}
+\renewcommand\theequation{A.\arabic{equation}}
 
 \section{(Title)}
 This section is not numbered.
@@ -233,6 +234,7 @@ Reference to a chapter in an edited book\cite{chap}.\\
 Reference to a website\cite{web}.
 
 \bibliographystyle{unsrt}
+\balance
 \bibliography{reference}
 
 % \begin{thebibliography}{9}
